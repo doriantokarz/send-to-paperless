@@ -19,8 +19,7 @@ export default {
 		HEADERS = {
 			'CF-Access-Client-Id': env.CF_ACCESS_CLIENT_ID,
 			'CF-Access-Client-Secret': env.CF_ACCESS_CLIENT_SECRET,
-			// Authorization: `Token ${env.PAPERLESS_TOKEN}`,
-                        Authorization: env.PAPERLESS_TOKEN,
+			Authorization: `Token ${env.PAPERLESS_TOKEN}`,
 		};
 
 		const msg = await PostalMime.parse(message.raw);
